@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>StackOverflowViper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>395DACF81C22ED6D008E9906</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>395DAD0C1C22ED6D008E9906</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>395DAD171C22ED6D008E9906</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
