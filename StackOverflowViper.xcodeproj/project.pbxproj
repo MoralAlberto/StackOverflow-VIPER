@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		395DACFD1C22ED6D008E9906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DACFC1C22ED6D008E9906 /* AppDelegate.swift */; };
-		395DACFF1C22ED6D008E9906 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DACFE1C22ED6D008E9906 /* ViewController.swift */; };
 		395DAD021C22ED6D008E9906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395DAD001C22ED6D008E9906 /* Main.storyboard */; };
 		395DAD041C22ED6D008E9906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395DAD031C22ED6D008E9906 /* Assets.xcassets */; };
 		395DAD071C22ED6D008E9906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395DAD051C22ED6D008E9906 /* LaunchScreen.storyboard */; };
 		395DAD121C22ED6D008E9906 /* StackOverflowViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD111C22ED6D008E9906 /* StackOverflowViperTests.swift */; };
 		395DAD1D1C22ED6D008E9906 /* StackOverflowViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD1C1C22ED6D008E9906 /* StackOverflowViperUITests.swift */; };
+		395DAD321C22EF1B008E9906 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD311C22EF1B008E9906 /* View.swift */; };
+		395DAD341C22EF8E008E9906 /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD331C22EF8E008E9906 /* QuestionsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		395DACF91C22ED6D008E9906 /* StackOverflowViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		395DACFC1C22ED6D008E9906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		395DACFE1C22ED6D008E9906 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		395DAD011C22ED6D008E9906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		395DAD031C22ED6D008E9906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		395DAD061C22ED6D008E9906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		395DAD181C22ED6D008E9906 /* StackOverflowViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		395DAD1C1C22ED6D008E9906 /* StackOverflowViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowViperUITests.swift; sourceTree = "<group>"; };
 		395DAD1E1C22ED6D008E9906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395DAD311C22EF1B008E9906 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		395DAD331C22EF8E008E9906 /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				395DACFC1C22ED6D008E9906 /* AppDelegate.swift */,
-				395DACFE1C22ED6D008E9906 /* ViewController.swift */,
 				395DAD001C22ED6D008E9906 /* Main.storyboard */,
+				395DAD301C22EDBC008E9906 /* View */,
+				395DAD2E1C22EDBC008E9906 /* Presenter */,
+				395DAD2D1C22EDBC008E9906 /* Interactor */,
+				395DAD2C1C22EDBC008E9906 /* Entities */,
+				395DAD2F1C22EDBC008E9906 /* Routing */,
 				395DAD031C22ED6D008E9906 /* Assets.xcassets */,
 				395DAD051C22ED6D008E9906 /* LaunchScreen.storyboard */,
 				395DAD081C22ED6D008E9906 /* Info.plist */,
@@ -123,6 +129,43 @@
 				395DAD1E1C22ED6D008E9906 /* Info.plist */,
 			);
 			path = StackOverflowViperUITests;
+			sourceTree = "<group>";
+		};
+		395DAD2C1C22EDBC008E9906 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		395DAD2D1C22EDBC008E9906 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		395DAD2E1C22EDBC008E9906 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		395DAD2F1C22EDBC008E9906 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		395DAD301C22EDBC008E9906 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				395DAD311C22EF1B008E9906 /* View.swift */,
+				395DAD331C22EF8E008E9906 /* QuestionsTableViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				395DACFF1C22ED6D008E9906 /* ViewController.swift in Sources */,
+				395DAD321C22EF1B008E9906 /* View.swift in Sources */,
+				395DAD341C22EF8E008E9906 /* QuestionsTableViewController.swift in Sources */,
 				395DACFD1C22ED6D008E9906 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
