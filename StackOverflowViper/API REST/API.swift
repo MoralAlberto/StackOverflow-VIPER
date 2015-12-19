@@ -12,7 +12,7 @@ class API: NSObject {
     
     static func getQuestions(completion: (result: Question?) -> Void) {
         
-        let url = NSURL(string: "\(APIConstants.API.EndPoint)\(APIConstants.API.Questions)")
+        let url = NSURL(string: "\(Constants.API.EndPoint)\(Constants.API.Questions)")
         
         NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) in
         

@@ -25,12 +25,11 @@
 		3964922E1C25CCE000155450 /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492271C25CCE000155450 /* QuestionsTableViewController.swift */; };
 		3964922F1C25CCE000155450 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492281C25CCE000155450 /* View.swift */; };
 		396492371C25CD2E00155450 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492311C25CD2E00155450 /* API.swift */; };
-		396492381C25CD2E00155450 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492321C25CD2E00155450 /* APIConstants.swift */; };
+		396492381C25CD2E00155450 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492321C25CD2E00155450 /* Constants.swift */; };
 		396492391C25CD2E00155450 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492341C25CD2E00155450 /* Items.swift */; };
 		3964923A1C25CD2E00155450 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492351C25CD2E00155450 /* Question.swift */; };
 		3964923B1C25CD2E00155450 /* ParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492361C25CD2E00155450 /* ParserManager.swift */; };
 		3964923D1C25CDAB00155450 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3964923C1C25CDAB00155450 /* ObjectMapper.framework */; };
-		3964923E1C25CDB900155450 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3964923C1C25CDAB00155450 /* ObjectMapper.framework */; };
 		3964923F1C25CDB900155450 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3964923C1C25CDAB00155450 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -90,7 +89,7 @@
 		396492271C25CCE000155450 /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
 		396492281C25CCE000155450 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		396492311C25CD2E00155450 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		396492321C25CD2E00155450 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		396492321C25CD2E00155450 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		396492341C25CD2E00155450 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		396492351C25CD2E00155450 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		396492361C25CD2E00155450 /* ParserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserManager.swift; sourceTree = "<group>"; };
@@ -104,7 +103,6 @@
 			files = (
 				3964923D1C25CDAB00155450 /* ObjectMapper.framework in Frameworks */,
 				391A3CEA1C25BEAE00B5E950 /* Result.framework in Frameworks */,
-				3964923E1C25CDB900155450 /* ObjectMapper.framework in Frameworks */,
 				391A3CE81C25BEAE00B5E950 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,9 +198,9 @@
 		396492181C25CCE000155450 /* List Questions */ = {
 			isa = PBXGroup;
 			children = (
+				396492231C25CCE000155450 /* User Interface */,
 				396492191C25CCE000155450 /* Application Logic */,
 				396492201C25CCE000155450 /* Navigation */,
-				396492231C25CCE000155450 /* User Interface */,
 			);
 			path = "List Questions";
 			sourceTree = "<group>";
@@ -287,9 +285,9 @@
 			isa = PBXGroup;
 			children = (
 				396492311C25CD2E00155450 /* API.swift */,
-				396492331C25CD2E00155450 /* Models */,
 				396492361C25CD2E00155450 /* ParserManager.swift */,
-				396492321C25CD2E00155450 /* APIConstants.swift */,
+				396492321C25CD2E00155450 /* Constants.swift */,
+				396492331C25CD2E00155450 /* Models */,
 			);
 			path = "API REST";
 			sourceTree = "<group>";
@@ -457,7 +455,7 @@
 				3964922D1C25CCE000155450 /* Presenter.swift in Sources */,
 				3964923A1C25CD2E00155450 /* Question.swift in Sources */,
 				3964922A1C25CCE000155450 /* InteractorIO.swift in Sources */,
-				396492381C25CD2E00155450 /* APIConstants.swift in Sources */,
+				396492381C25CD2E00155450 /* Constants.swift in Sources */,
 				396492371C25CD2E00155450 /* API.swift in Sources */,
 				396492391C25CD2E00155450 /* Items.swift in Sources */,
 				3964922B1C25CCE000155450 /* ItemModel.swift in Sources */,

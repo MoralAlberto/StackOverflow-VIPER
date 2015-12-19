@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct APIConstants {
+struct Constants {
     struct API {
         static let EndPoint = "https://api.stackexchange.com/2.2/"
         static let Questions = "questions?order=desc&sort=activity&site=stackoverflow"
