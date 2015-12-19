@@ -26,6 +26,7 @@
 		395DAD1D1C22ED6D008E9906 /* StackOverflowViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD1C1C22ED6D008E9906 /* StackOverflowViperUITests.swift */; };
 		395DAD321C22EF1B008E9906 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD311C22EF1B008E9906 /* View.swift */; };
 		395DAD341C22EF8E008E9906 /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD331C22EF8E008E9906 /* QuestionsTableViewController.swift */; };
+		396492151C25C4C300155450 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396492141C25C4C300155450 /* ItemModel.swift */; };
 		39D6E83E1C2475130053674A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6E83D1C2475130053674A /* Presenter.swift */; };
 		39D6E8401C2475330053674A /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6E83F1C2475330053674A /* Interactor.swift */; };
 		39D6E8421C2475490053674A /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6E8411C2475490053674A /* Routing.swift */; };
@@ -88,6 +89,7 @@
 		395DAD1E1C22ED6D008E9906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395DAD311C22EF1B008E9906 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		395DAD331C22EF8E008E9906 /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
+		396492141C25C4C300155450 /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemModel.swift; path = Carthage/Build/iOS/ItemModel.swift; sourceTree = SOURCE_ROOT; };
 		39D6E83D1C2475130053674A /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = SOURCE_ROOT; };
 		39D6E83F1C2475330053674A /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = SOURCE_ROOT; };
 		39D6E8411C2475490053674A /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = SOURCE_ROOT; };
@@ -264,6 +266,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		396492161C25C4CB00155450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				396492141C25C4C300155450 /* ItemModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		39D6E85A1C256FFC0053674A /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +296,7 @@
 			children = (
 				395DAD2D1C22EDBC008E9906 /* Interactor */,
 				395DAD2C1C22EDBC008E9906 /* Entities */,
+				396492161C25C4CB00155450 /* Model */,
 			);
 			name = "Application Logic";
 			sourceTree = "<group>";
@@ -441,6 +452,7 @@
 			files = (
 				395DAD321C22EF1B008E9906 /* View.swift in Sources */,
 				395DAD341C22EF8E008E9906 /* QuestionsTableViewController.swift in Sources */,
+				396492151C25C4C300155450 /* ItemModel.swift in Sources */,
 				39D6E8601C2570B10053674A /* InteractorIO.swift in Sources */,
 				39D6E8421C2475490053674A /* Routing.swift in Sources */,
 				39D6E8401C2475330053674A /* Interactor.swift in Sources */,

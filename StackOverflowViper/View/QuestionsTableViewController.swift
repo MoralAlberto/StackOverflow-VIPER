@@ -10,7 +10,7 @@ import UIKit
 
 class QuestionsTableViewController: UITableViewController, tableViewQuestionsDelegate {
     
-    var questions: NSArray?
+    var questions: [ItemModel]?
     var presenter: Presenter?
     
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class QuestionsTableViewController: UITableViewController, tableViewQuestionsDel
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "questionCell")
         
-        let item: Items = questions![indexPath.row] as! Items
+        let item: ItemModel = questions![indexPath.row]
         cell.textLabel?.text = item.title
         
         return cell
@@ -44,7 +44,7 @@ class QuestionsTableViewController: UITableViewController, tableViewQuestionsDel
     //  MARK: View Delegate
     
     func updateQuestions(objects: NSArray) {
-        self.questions = objects
+        self.questions = objects as? [ItemModel]
         
         dispatch_async(dispatch_get_main_queue(), {
             self.tableView.reloadData()
