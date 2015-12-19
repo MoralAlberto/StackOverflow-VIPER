@@ -11,27 +11,36 @@ import UIKit
 class QuestionsTableViewController: UITableViewController, tableViewQuestionsDelegate {
     
     var questions: [String]?
+    var presenter: Presenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        presenter!.getQuestions()
     }
     
-    func questions(questions: [String]) {
-        self.questions = questions
-        self.tableView.reloadData()
-    }
-    
-    //MARK: Delegate & Source Table View
+    //  MARK: Delegate & Source Table View
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        <#code#>
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "questionCell")
+        cell.backgroundColor = UIColor.redColor()
+        
+        return cell
     }
     
+    //  MARK: Delegate
     
-
+//    func updateQuestions(questions: [String]) {
+    func updateQuestions() {
+        print("Table View Updated")
+//        self.questions = questions
+//        self.tableView.reloadData()
+    }
 }

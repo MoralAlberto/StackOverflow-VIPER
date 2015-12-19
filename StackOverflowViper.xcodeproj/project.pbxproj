@@ -15,6 +15,10 @@
 		395DAD1D1C22ED6D008E9906 /* StackOverflowViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD1C1C22ED6D008E9906 /* StackOverflowViperUITests.swift */; };
 		395DAD321C22EF1B008E9906 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD311C22EF1B008E9906 /* View.swift */; };
 		395DAD341C22EF8E008E9906 /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DAD331C22EF8E008E9906 /* QuestionsTableViewController.swift */; };
+		39D6E83E1C2475130053674A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6E83D1C2475130053674A /* Presenter.swift */; };
+		39D6E8401C2475330053674A /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6E83F1C2475330053674A /* Interactor.swift */; };
+		39D6E8421C2475490053674A /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6E8411C2475490053674A /* Routing.swift */; };
+		39D6E8601C2570B10053674A /* InteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6E85F1C2570B10053674A /* InteractorIO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		395DAD1E1C22ED6D008E9906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395DAD311C22EF1B008E9906 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		395DAD331C22EF8E008E9906 /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
+		39D6E83D1C2475130053674A /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = SOURCE_ROOT; };
+		39D6E83F1C2475330053674A /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = SOURCE_ROOT; };
+		39D6E8411C2475490053674A /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = SOURCE_ROOT; };
+		39D6E85F1C2570B10053674A /* InteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorIO.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				395DACFC1C22ED6D008E9906 /* AppDelegate.swift */,
+				39D6E85B1C25700C0053674A /* User Interface */,
+				39D6E85C1C25702E0053674A /* Application Logic */,
+				39D6E85A1C256FFC0053674A /* Navigation */,
 				395DAD001C22ED6D008E9906 /* Main.storyboard */,
-				395DAD301C22EDBC008E9906 /* View */,
-				395DAD2E1C22EDBC008E9906 /* Presenter */,
-				395DAD2D1C22EDBC008E9906 /* Interactor */,
-				395DAD2C1C22EDBC008E9906 /* Entities */,
-				395DAD2F1C22EDBC008E9906 /* Routing */,
 				395DAD031C22ED6D008E9906 /* Assets.xcassets */,
 				395DAD051C22ED6D008E9906 /* LaunchScreen.storyboard */,
 				395DAD081C22ED6D008E9906 /* Info.plist */,
@@ -141,6 +147,8 @@
 		395DAD2D1C22EDBC008E9906 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				39D6E85F1C2570B10053674A /* InteractorIO.swift */,
+				39D6E83F1C2475330053674A /* Interactor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 		395DAD2E1C22EDBC008E9906 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				39D6E83D1C2475130053674A /* Presenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -155,6 +164,7 @@
 		395DAD2F1C22EDBC008E9906 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				39D6E8411C2475490053674A /* Routing.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -166,6 +176,32 @@
 				395DAD331C22EF8E008E9906 /* QuestionsTableViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		39D6E85A1C256FFC0053674A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				395DAD2F1C22EDBC008E9906 /* Routing */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		39D6E85B1C25700C0053674A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				395DAD301C22EDBC008E9906 /* View */,
+				395DAD2E1C22EDBC008E9906 /* Presenter */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		39D6E85C1C25702E0053674A /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				395DAD2D1C22EDBC008E9906 /* Interactor */,
+				395DAD2C1C22EDBC008E9906 /* Entities */,
+			);
+			name = "Application Logic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +337,10 @@
 			files = (
 				395DAD321C22EF1B008E9906 /* View.swift in Sources */,
 				395DAD341C22EF8E008E9906 /* QuestionsTableViewController.swift in Sources */,
+				39D6E8601C2570B10053674A /* InteractorIO.swift in Sources */,
+				39D6E8421C2475490053674A /* Routing.swift in Sources */,
+				39D6E8401C2475330053674A /* Interactor.swift in Sources */,
+				39D6E83E1C2475130053674A /* Presenter.swift in Sources */,
 				395DACFD1C22ED6D008E9906 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +568,7 @@
 				395DAD231C22ED6D008E9906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		395DAD241C22ED6D008E9906 /* Build configuration list for PBXNativeTarget "StackOverflowViperTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +577,7 @@
 				395DAD261C22ED6D008E9906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		395DAD271C22ED6D008E9906 /* Build configuration list for PBXNativeTarget "StackOverflowViperUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +586,7 @@
 				395DAD291C22ED6D008E9906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

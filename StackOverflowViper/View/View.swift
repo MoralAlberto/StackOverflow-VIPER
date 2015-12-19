@@ -7,5 +7,6 @@
 //
 
 protocol tableViewQuestionsDelegate {
-    func questions(questions: [String])
+//    func updateQuestions(questions: [String])
+    func updateQuestions()
 }
