@@ -15,11 +15,10 @@ class Interactor: InteractorProtocolInput {
     func getQuestions() {
         //  API CALL, when we have the result we need to notify to the presenter, and the presenter will notify to the view.
         NSLog("Call to stackoverflow API")
-        API.getQuestions { (result) -> Void in
-            let dictionary = result as! NSDictionary
-            let array = dictionary["items"] as! NSArray
-            
-            self.presenter!.updateQuestions(array)
+        API.getQuestions { (result: Question?) -> Void in
+            print(result?.items)
+            print(result)
+            self.presenter!.updateQuestions((result?.items)!)
         }
     }
 }

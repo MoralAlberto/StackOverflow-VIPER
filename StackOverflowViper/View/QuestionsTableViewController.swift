@@ -35,7 +35,8 @@ class QuestionsTableViewController: UITableViewController, tableViewQuestionsDel
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "questionCell")
         
-        cell.textLabel?.text = questions![indexPath.row]["title"] as? String
+        let item: Items = questions![indexPath.row] as! Items
+        cell.textLabel?.text = item.title
         
         return cell
     }
