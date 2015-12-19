@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391A3C901C25B11600B5E950 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3C8F1C25B11600B5E950 /* API.swift */; };
+		391A3C951C25B78D00B5E950 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3C941C25B78D00B5E950 /* Constants.swift */; };
+		391A3C9A1C25BB0C00B5E950 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391A3C961C25BB0C00B5E950 /* Box.framework */; };
+		391A3C9B1C25BB0C00B5E950 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391A3C971C25BB0C00B5E950 /* ObjectMapper.framework */; };
+		391A3C9C1C25BB0C00B5E950 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391A3C981C25BB0C00B5E950 /* ReactiveCocoa.framework */; };
+		391A3C9D1C25BB0C00B5E950 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391A3C991C25BB0C00B5E950 /* Result.framework */; };
 		395DACFD1C22ED6D008E9906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DACFC1C22ED6D008E9906 /* AppDelegate.swift */; };
 		395DAD021C22ED6D008E9906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395DAD001C22ED6D008E9906 /* Main.storyboard */; };
 		395DAD041C22ED6D008E9906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395DAD031C22ED6D008E9906 /* Assets.xcassets */; };
@@ -39,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		391A3C8F1C25B11600B5E950 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = ../API.swift; sourceTree = "<group>"; };
+		391A3C941C25B78D00B5E950 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		391A3C961C25BB0C00B5E950 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
+		391A3C971C25BB0C00B5E950 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		391A3C981C25BB0C00B5E950 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		391A3C991C25BB0C00B5E950 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		395DACF91C22ED6D008E9906 /* StackOverflowViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		395DACFC1C22ED6D008E9906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		395DAD011C22ED6D008E9906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391A3C9A1C25BB0C00B5E950 /* Box.framework in Frameworks */,
+				391A3C9B1C25BB0C00B5E950 /* ObjectMapper.framework in Frameworks */,
+				391A3C9C1C25BB0C00B5E950 /* ReactiveCocoa.framework in Frameworks */,
+				391A3C9D1C25BB0C00B5E950 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +100,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391A3C911C25B18600B5E950 /* ListQuestions */ = {
+			isa = PBXGroup;
+			children = (
+				39D6E85B1C25700C0053674A /* User Interface */,
+				39D6E85C1C25702E0053674A /* Application Logic */,
+				39D6E85A1C256FFC0053674A /* Navigation */,
+			);
+			name = ListQuestions;
+			sourceTree = "<group>";
+		};
+		391A3C921C25B18E00B5E950 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				391A3C911C25B18600B5E950 /* ListQuestions */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		391A3C931C25B19B00B5E950 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				391A3C8F1C25B11600B5E950 /* API.swift */,
+				391A3C941C25B78D00B5E950 /* Constants.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		391A3C9E1C25BB1300B5E950 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				391A3C961C25BB0C00B5E950 /* Box.framework */,
+				391A3C971C25BB0C00B5E950 /* ObjectMapper.framework */,
+				391A3C981C25BB0C00B5E950 /* ReactiveCocoa.framework */,
+				391A3C991C25BB0C00B5E950 /* Result.framework */,
+			);
+			name = Carthage;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		395DACF01C22ED6D008E9906 = {
 			isa = PBXGroup;
 			children = (
@@ -107,10 +162,10 @@
 		395DACFB1C22ED6D008E9906 /* StackOverflowViper */ = {
 			isa = PBXGroup;
 			children = (
+				391A3C9E1C25BB1300B5E950 /* Carthage */,
 				395DACFC1C22ED6D008E9906 /* AppDelegate.swift */,
-				39D6E85B1C25700C0053674A /* User Interface */,
-				39D6E85C1C25702E0053674A /* Application Logic */,
-				39D6E85A1C256FFC0053674A /* Navigation */,
+				391A3C921C25B18E00B5E950 /* Modules */,
+				391A3C931C25B19B00B5E950 /* Service */,
 				395DAD001C22ED6D008E9906 /* Main.storyboard */,
 				395DAD031C22ED6D008E9906 /* Assets.xcassets */,
 				395DAD051C22ED6D008E9906 /* LaunchScreen.storyboard */,
@@ -214,6 +269,7 @@
 				395DACF51C22ED6D008E9906 /* Sources */,
 				395DACF61C22ED6D008E9906 /* Frameworks */,
 				395DACF71C22ED6D008E9906 /* Resources */,
+				391A3C9F1C25BB1E00B5E950 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -330,6 +386,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		391A3C9F1C25BB1E00B5E950 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		395DACF51C22ED6D008E9906 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -341,7 +413,9 @@
 				39D6E8421C2475490053674A /* Routing.swift in Sources */,
 				39D6E8401C2475330053674A /* Interactor.swift in Sources */,
 				39D6E83E1C2475130053674A /* Presenter.swift in Sources */,
+				391A3C901C25B11600B5E950 /* API.swift in Sources */,
 				395DACFD1C22ED6D008E9906 /* AppDelegate.swift in Sources */,
+				391A3C951C25B78D00B5E950 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +557,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = StackOverflowViper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertoMoral.StackOverflowViper;
@@ -494,6 +572,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = StackOverflowViper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertoMoral.StackOverflowViper;

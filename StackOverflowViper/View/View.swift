@@ -6,7 +6,8 @@
 //  Copyright © 2015 Alberto Moral. All rights reserved.
 //
 
+import Foundation
+
 protocol tableViewQuestionsDelegate {
-//    func updateQuestions(questions: [String])
-    func updateQuestions()
+    func updateQuestions(objects: NSArray)
 }

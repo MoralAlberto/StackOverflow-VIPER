@@ -6,10 +6,12 @@
 //  Copyright © 2015 Alberto Moral. All rights reserved.
 //
 
+import Foundation
+
 protocol InteractorProtocolInput {
     func getQuestions()
 }
 
 protocol InteractorProtocolOutput {
-    func updateQuestions()
+    func updateQuestions(objects: NSArray)
 }

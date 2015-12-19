@@ -10,7 +10,7 @@ import UIKit
 
 class QuestionsTableViewController: UITableViewController, tableViewQuestionsDelegate {
     
-    var questions: [String]?
+    var questions: NSArray?
     var presenter: Presenter?
     
     override func viewDidLoad() {
@@ -25,22 +25,28 @@ class QuestionsTableViewController: UITableViewController, tableViewQuestionsDel
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if let x = self.questions?.count {
+            return x
+        } else {
+            return 0
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "questionCell")
-        cell.backgroundColor = UIColor.redColor()
+        
+        cell.textLabel?.text = questions![indexPath.row]["title"] as? String
         
         return cell
     }
     
-    //  MARK: Delegate
+    //  MARK: View Delegate
     
-//    func updateQuestions(questions: [String]) {
-    func updateQuestions() {
-        print("Table View Updated")
-//        self.questions = questions
-//        self.tableView.reloadData()
+    func updateQuestions(objects: NSArray) {
+        self.questions = objects
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.tableView.reloadData()
+        })
     }
 }

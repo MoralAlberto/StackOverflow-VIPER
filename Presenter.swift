@@ -18,8 +18,8 @@ class Presenter: InteractorProtocolOutput {
         interactor!.getQuestions()
     }
     
-    func updateQuestions() {
+    func updateQuestions(objects: NSArray) {
         NSLog("Notify to the view with the new questions")
-        view!.updateQuestions()
+        view!.updateQuestions(objects)
     }
 }
