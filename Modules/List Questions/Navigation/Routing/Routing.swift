@@ -14,14 +14,15 @@ class Routing {
     var interactor = Interactor()
     var navigationController: UINavigationController?
     
-    
     init() {
         vc.presenter = self.presenter
+        
         presenter.view = vc
         presenter.interactor = interactor
         presenter.routing = self
         
         interactor.presenter = self.presenter
+        
         navigationController = UINavigationController(rootViewController: vc)
     }
 }
